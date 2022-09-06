@@ -1,0 +1,442 @@
+body{
+    background: rgb(1, 101, 151);
+    background-image: linear-gradient(to right,rgb(1, 56, 83), rgba(19, 116, 161, 0.3),rgb(1,56, 83,0.5));
+   
+}
+
+.forma{
+   position: relative;
+background-color: rgba(167, 249, 255, 0.822);
+margin: 15% 1% 10% 14%;
+width: 70%;
+padding: 1% 0% 1% 0%;
+border-radius: 2em;
+} 
+
+
+.date_time{
+    display: inline-block;
+    width: 90%;
+    margin: 0% 5% 10% 5%;
+   /* background-color: chartreuse; */
+}
+
+#today,#currentTime{
+    letter-spacing: 1px;
+    text-decoration:underline;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:90%;
+    font-weight:500;
+    margin: 0% 0% 0% 0%;
+    font-style: italic;
+}
+
+
+
+.div0{        /* exam div    */ 
+    flex-direction:row;
+    margin: 1% 20% 2% 20%;
+    width: 60%;
+    align-content: center;
+}
+
+.div2{        /* Adding new Question*/
+/*display:flex; 
+flex-direction:row;*/
+padding: 1% 1% 0% 1%;
+margin: 1% 1% 1% 2%;
+/*background-color:rgb(29, 116, 48);*/
+}
+
+.div1{      /* Adding new Section*/
+  
+    flex-direction:row;
+    margin: 2% 2% 0% 2%;
+padding-right: 3%;
+    align-content: center;
+    
+   
+}
+#ExamName{ 
+    border:0em;
+    border-radius: 0.7em;
+    background-color: rgb(255, 199, 199);
+     font-weight: 600;
+     width: 100%;
+     padding:1% 3% 1% 1%;
+     font-size: larger;
+     text-align: center;
+
+     
+
+}
+
+.Ques_TestArea{       /*       write question text area         */
+    width: 100%;
+}
+
+.div3{
+    display:flex;
+   /* background-color: rgb(247, 184, 222);*/
+    padding: 1% 1% 1% 1%;
+    margin: 1% 27% 1% 33%;
+    bottom: 2%;
+
+}
+
+
+.div4{      /* Adding new Option*/
+    display:flex; 
+    flex-direction:row;
+    padding: 1% 1% 1% 1%;
+    margin: 1% 1% 1% 2%;
+    background-color:rgb(138, 243, 161);
+}
+
+#CostumedDiv{
+        padding: 1% 2% 1% 1%;
+     /*   background-color:rgb(252, 180, 216);*/
+        margin: 1% 1% 1% -1%;   
+       
+}
+
+.select1{
+float: right;
+width:7%;
+padding: 0%;
+margin: 0.5% 0% 10% 1%;
+font-size: 75%;
+font-weight: 900;
+-webkit-appearance: none;
+-moz-appearance: none;
+border: 0;
+text-align: center;
+border-radius: 5px 5px 5px 5px;
+height: 21px;
+box-shadow: 3px 3px rgb(0, 0, 0);
+
+}
+
+.select1:hover{
+
+    height: 30px;
+}
+.select_opt_nbr{
+    box-shadow: 2px 2px rgb(0, 0, 0);
+    border-radius:5px;
+}
+.select_opt_nbr:hover{
+    height: 25px;
+}
+.side{
+position:sticky;
+width:3.5%;
+text-align: center;
+float:right;
+top :15%;
+margin: 3% 0% 1% 0%;
+/*background-color:rgb(191, 248, 250);*/
+display:flex;
+flex-direction:column;
+justify-content: space-around;
+align-items: center;
+
+
+}
+
+.lables_Side{
+position:sticky;
+top :20.5%;
+float:right;
+width:10.5%;
+height: fit-content;
+display:flex;
+flex-direction:column;
+justify-content: space-around;
+align-items:left;
+margin: 6% 0% 0.5% 0.5%;
+padding-top: 2%;
+color: #ffffff;
+font-size:90% ;
+}
+
+.lables{
+    opacity:0;
+    margin-top: 10%;
+    font-weight:450;
+    font-size: 90%;
+    color: #ffffff;
+
+}
+
+.div_opt_nbr{
+    width: fit-content;
+    float: right;
+   /* background-color: rgb(206, 169, 241);*/
+    font-size: small;
+    padding-top: 0.5%;
+}
+
+.add_opt_btn{
+border-radius: 10px;
+opacity: 0.6;
+border:0;
+margin:0% 2% 0% 2%;
+font-size: 1em;
+padding:0.5% 1.5% 1.5% 1.5%;
+font-weight:500;
+}
+
+.add_opt_btn:hover{
+   color: #023966; 
+   background-color: #ffffff;
+   opacity: 1;
+  
+   transition: 0.4s;
+   
+}
+
+.nbr_option{
+    float: right;
+    border-radius: 15%;
+    opacity: 0.5;
+    border:1;
+    margin:1% 1% 1% 0% ;
+    }
+
+.OptionsLable {
+    margin: 3% 1% 1% 1%;
+    width:40%;
+    height: 35px;
+    border-radius: 7px;
+    border: #023966;
+    padding: 0.5% 1% 0.5% 0.5%;
+}
+.OptionsLable:hover{
+    background-color: #f2fdc0;
+    font-weight: bold;
+}
+
+.MarkInput{
+    float: right;
+    width: 5%;
+    height: 1.7em;
+    border-radius: 1px 12px 12px 1px ;
+    padding-left: 0.5%;
+    background-color: rgb(250, 216, 216);
+    margin-left: 0.5%;
+    margin-bottom: 10%;
+
+}
+.MarkInput:hover{
+    opacity: 1;
+    background-color: rgb(255, 255, 255);
+    font-weight: 500;
+
+}
+
+.checkBoxStyle{
+    width: 17px;
+    height: 17px;
+   border: #023966;
+}
+
+/*-----------------------------------------*/
+.navbtn{
+    border-radius: 25%;
+    margin: 7% 0% 7% 0%;
+    width: fit-content;
+    height: fit-content;
+    border: 0; 
+}
+
+.permissons_div{
+width: 60% ;
+/*background-color: rgb(105, 105, 105);*/
+padding: 1% 1% 1% 7%;
+margin: 3% 20% 6% 20%;
+text-align: left;
+border: dotted;
+
+}
+
+.spn2{
+    width: fit-content;
+    /*background-color: rgb(187, 248, 171);*/
+    display:none;
+    flex-direction:column;
+    justify-content: space-around;
+    margin-left: 0%;
+    }
+
+.spn_labels{
+font-size:85%;
+font-weight: 600;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+.remove_btn{
+border-radius: 20px;
+border: 0;
+padding:0.5% 1% 0.5% 1%;
+width: fit-content;
+height:fit-content;
+margin: 0.5% 0% 1% 0.5%;
+opacity: 0.75;
+font-size: small;
+
+}
+
+.remove_btn:hover{
+  color: rgb(168, 1, 1);
+  opacity: 1;
+  background-color: #ffffff;
+  transition: 0.4s;  
+}
+
+.submit_div{
+    width:22%;
+    padding:7% 1% 1% 1%;
+    margin:5% 39% 1% 39% ;
+}
+
+.schedulebtn{
+height: 35px;
+width: 100%;
+padding: 1.5% 3% 1.5% 2%;
+font-size: 100%;
+border-radius: 6px;
+font-weight: 700;
+margin-right:2% ;
+text-align: center;
+flex-direction:row;
+border: 1;
+color: rgb(0, 116, 15);
+background-color: rgb(255, 255, 255);
+word-spacing: 5px;
+}
+
+.schedulebtn:hover {
+    background-color: #00215e;
+    color: rgb(255, 255, 255);
+    transition: 0.4s;
+}
+
+
+.schedulespan{
+    border-radius: 25px;
+    background-color: rgb(247, 170, 142);
+    position: fixed;
+margin-bottom: 2%;
+top: 15%;
+left: 30%;
+width: 40%;
+padding: 3% 2% 3% 2%;
+text-align: center;
+display:none;
+}
+.schedule_labels{
+    font-weight: 500;
+    padding: 1.2% 3% 1.2% 3%;
+    border-radius: 4px 0px 0px 4px;
+    text-align:left;
+     background-color: rgb(230, 225, 225);
+
+
+}
+
+
+/**********************/
+
+
+  /*             for nav bar       */
+.NavBar {
+    background: rgb(1, 101, 151);
+    
+    border-bottom: 2px white;
+    top: 0%;
+    height: 12%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background-image: linear-gradient(to right,rgb(1, 56, 83), rgba(19, 116, 161, 0.3),rgb(1,56, 83,0.5));
+}
+.logo {
+    margin: 1% 0% 1% 4%;
+ width: 15%;
+ height: 97%;
+}
+
+nav ul {
+    float: right;
+    margin-right: 3%;
+    margin-top: 2%;
+
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0%;
+  
+}
+
+nav ul li a {
+    color: white;
+    font-size: 3 em;
+    padding: 7px 13px;
+    border-radius: 25%;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none; 
+    
+}
+
+a.active,
+a:hover {
+    background: #ffffff;
+    transition: 0.6s;
+    color: black;
+}
+
+
+.BtnLogOut {
+    float: right;
+  height: 60%;
+  width: auto;
+    background-color: rgb(3, 86, 128);
+    border: 0;
+    border-radius: 23%;
+    font-size: 3 em;
+    font-weight: bold;
+    font-family: monospace;
+    margin: 1% 5% 1% 1%;
+    padding: 0% 1% 3% 1%;
+    
+}
+
+.BtnLogOut:hover {
+    background-color: #ffffff;
+    color: rgb(146, 13, 3);
+  font-weight:bolder;
+    transition: 0.6s;
+}
+@media (max-width: 800px) {
+
+    .submit_div{
+         width:30%;
+         padding:7% 0% 1% 0%;
+         margin:5% 35% 1% 35% ;
+     }
+     .schedulebtn{
+        height: 25px;
+        padding: 0.5% 0.5% 0.5% 0.5%;
+        font-size: 50%;
+        border-radius: 5px;
+        font-weight: 600;
+        text-align: center;
+        word-spacing: 2px;
+        }
+  
+   
+  
+  }

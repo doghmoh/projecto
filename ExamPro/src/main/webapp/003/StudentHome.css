@@ -1,0 +1,58 @@
+@charset "ISO-8859-1";
+@import url("./Library/FamilyPoppins.css");
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none !important;
+    list-style: none !important;
+    box-sizing: border-box ;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: monospace !important;
+    overflow-x: hidden;
+}
+/*Section Global */
+
+.GlobalSection {
+    width: 80%;
+    margin: 5.68% 0 0 20%;
+    padding: 0px;
+    min-height: 91.5%;
+    font-size: 1vw;
+    bottom: 0;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+	padding: 0 5% 0 0;
+}
+/* Block for Low resolution */
+
+@media (max-width: 959px) {
+    .navbar { 
+    padding: 0 !important; 
+}
+}
+@media (max-width: 858px) {
+	.GlobalSection{
+    width: 100%;
+    border:none;
+    left:0;
+    margin: 82px auto;
+    z-index: 3;
+    font-size:2vw;
+    }
+    .sos{
+    flex-direction : column !important;
+    }
+    div.card{
+    width:90% !important;}
+    .Main {
+        font-size: 2.1vw;
+    }
+}
+
+/* ....................... */

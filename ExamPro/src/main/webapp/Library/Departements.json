@@ -1,0 +1,249 @@
+[
+    {
+    "id": "1",
+    "name": "Faculty of Science",
+     "parent_name" : "none", 
+    "parent_id": "0"
+    },
+    {
+    "id": "2",
+    "name": "Faculty of Hydrocarbons and Chemistry",
+        "parent_name" : "none",
+    "parent_id": "0"
+    },
+    {
+    "id": "3",
+    "name": "Faculty of Technology",
+        "parent_name" : "none",
+    "parent_id": "0"
+    },
+    {
+    "id": "4",
+    "name": "Faculty of Economics, Commercial Sciences and Management Sciences",
+        "parent_name" : "none",
+    "parent_id": "0"
+    },
+    {
+    "id": "5",
+    "name": "Faculty of Law and Political Science",
+        "parent_name" : "none",
+    "parent_id": "0"
+    },
+    {
+    "id": "6",
+    "name": "Faculty of Arabic Language and Literature",
+    "parent_name" : "none",    
+    "parent_id": "0"
+    },
+    {
+    "id": "7",
+    "name": "Institute of Electrical and Electronic Engineering",
+    "parent_name" : "none",
+    "parent_id": "0"
+    },
+    {
+    "id": "8",
+    "name": "Agronomy Department",
+    "parent_name" : "Faculty of Science",
+    "parent_id": "1"
+    },
+    {
+    "id": "9",
+    "name": "Physics Department",
+    "parent_name" : "Faculty of Science",
+    "parent_id": "1"
+    },
+    {
+    "id": "10",
+    "name": "Biology Department",
+    "parent_name" : "Faculty of Science",    
+    "parent_id": "1"
+    },
+    {
+    "id": "11",
+    "name": "Mathematics Department",
+     "parent_name" : "Faculty of Science",
+    "parent_id": "1"
+    },
+    {
+    "id": "12",
+    "name": "IT Department",
+     "parent_name" : "Faculty of Science",
+    "parent_id": "1"
+    },
+    {
+    "id": "13",
+    "name": "Chemistry Department",
+    "parent_name" : "Faculty of Science",
+    "parent_id": "1"
+    },
+    {
+    "id": "14",
+    "name": "STAPS Department",
+    "parent_name" : "Faculty of Science",
+    "parent_id": "1"
+    },
+    {
+    "id": "15",
+    "name": "ST",
+    "parent_name" : "Faculty of Science",
+    "parent_id": "1"
+    },
+    {
+    "id": "16",
+    "name": "SM",
+    "parent_name" : "Faculty of Science",
+    "parent_id": "1"
+    },
+    {
+    "id": "17",
+    "name": "MI",
+    "parent_name" : "Faculty of Science",
+    "parent_id": "1"
+    },
+    {
+    "id": "18",
+    "name": "SNV",
+    "parent_name" : "Faculty of Science",
+    "parent_id": "1"
+    },
+    {
+    "id": "19",
+    "name": "Process Automation and Electrification Department",
+    "parent_name" : "Faculty of Hydrocarbons and Chemistry",
+    "parent_id": "2"
+    },
+    {
+    "id": "18",
+    "name": "Hydrocarbon Economics and Marketing Department",
+    "parent_name" : "Faculty of Hydrocarbons and Chemistry",
+    "parent_id": "2"
+    },
+    {
+    "id": "19",
+    "name": "Mining and Petroleum Deposits Department",
+        "parent_name" : "Faculty of Hydrocarbons and Chemistry",
+    "parent_id": "2"
+    },
+    {
+    "id": "20",
+    "name": "Chemical and Pharmaceutical Process Engineering Department",
+        "parent_name" : "Faculty of Hydrocarbons and Chemistry",
+    "parent_id": "2"
+    },
+    {
+    "id": "21",
+    "name": "Paraseismic Engineering, Geophysics and Random Phenomena Department",
+        "parent_name" : "Faculty of Hydrocarbons and Chemistry",
+    "parent_id": "2"
+    },
+    {
+    "id": "22",
+    "name": "Hydrocarbon Transport and Equipment Department",
+        "parent_name" : "Faculty of Hydrocarbons and Chemistry",
+    "parent_id": "2"
+    },
+    {
+    "id": "23",
+    "name": "Civil Engineering Department",
+        "parent_name" : "Faculty of Technology",
+    "parent_id": "3"
+    },
+    {
+    "id": "24",
+    "name": "Industrial Process Engineering Department",
+        "parent_name" : "Faculty of Technology",
+    "parent_id": "3"
+    },
+    {
+    "id": "25",
+    "name": "Mechanical Engineering Department",
+        "parent_name" : "Faculty of Technology",
+    "parent_id": "3"
+    },
+    {
+    "id": "26",
+    "name": "Electrical Engineering Department",
+        "parent_name" : "Faculty of Technology",
+    "parent_id": "3"
+    },
+    {
+    "id": "27",
+    "name": "Commercial Sciences Department",
+        "parent_name" : "Faculty of Economics, Commercial Sciences and Management Sciences",
+    "parent_id": "4"
+    },
+    {
+    "id": "28",
+    "name": "Management Sciences Department",
+         "parent_name" : "Faculty of Economics, Commercial Sciences and Management Sciences",
+    "parent_id": "4"
+    },
+    {
+    "id": "29",
+    "name": "Economics Department",
+         "parent_name" : "Faculty of Economics, Commercial Sciences and Management Sciences",
+    "parent_id": "4"
+    },
+    {
+    "id": "30",
+    "name": "Finance and Accounting Department",
+         "parent_name" : "Faculty of Economics, Commercial Sciences and Management Sciences",
+    "parent_id": "4"
+    },
+    {
+    "id": "31",
+    "name": "Private Law",
+     "parent_name" : "Faculty of Law and Political Science",
+    "parent_id": "5"
+    },
+    {
+    "id": "32",
+    "name": "Public Law",
+         "parent_name" : "Faculty of Law and Political Science",
+    "parent_id": "5"
+    },
+    {
+    "id": "33",
+    "name": "Political Science",
+         "parent_name" : "Faculty of Law and Political Science",
+    "parent_id": "5"
+    },
+    {
+    "id": "34",
+    "name": "Department Arabic letter",
+         "parent_name" : "Faculty of Arabic Language and Literature",
+    "parent_id": "6"
+    },
+    {
+    "id": "35",
+    "name": "English Department",
+        "parent_name" : "Faculty of Arabic Language and Literature",
+    "parent_id": "6"
+    },
+    {
+    "id": "36",
+    "name": "French Department",
+        "parent_name" : "Faculty of Arabic Language and Literature",
+    "parent_id": "6"
+    },
+    {
+    "id": "37",
+    "name": "Department of Automation and Electrical Engineering",
+        "parent_name" : "Institute of Electrical and Electronic Engineering",
+    "parent_id": "7"
+    },
+    {
+    "id": "38",
+    "name": "Department of Electronics",
+         "parent_name" : "Institute of Electrical and Electronic Engineering",
+    "parent_id": "7"
+    },
+    {
+    "id": "39",
+    "name": "Department of Basic Education",
+         "parent_name" : "Institute of Electrical and Electronic Engineering",
+    "parent_id": "7"
+    }
+
+]

@@ -1,0 +1,78 @@
+@charset "ISO-8859-1";
+@import url("./Library/FamilyPoppins.css");
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none !important;
+    list-style: none !important;
+    box-sizing: border-box ;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: monospace !important;
+    overflow-x: hidden;
+}
+/*Section Global */
+
+.GlobalSection {
+    width: 80%;
+    margin: 60px 0 0 20%;
+    padding: 20px;
+    min-height: 91.5%;
+    font-size: 1vw;
+    bottom: 0;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.divo{
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   margin:19px auto;
+   padding: 5px;
+   width: 90%;
+   flex-wrap: nowrap;
+   }
+table{
+width:355px;
+}
+.ChartDiv1{
+   border: none;
+   height: auto;
+   width: 100%;
+   margin: 30px 0;
+   border-radius:5px;
+   box-shadow: 1px 1px 13px blue;
+   background-color: white;
+}
+.chart-wrapper {
+   border-radius:5px;
+   box-shadow: 1px 1px 13px blue;
+   height: 300px;
+   width:  33%;
+   margin: 20px 4px;
+   padding: 5px;
+   background-color: white;
+ }
+ @media (max-width: 988px) {
+   .divo{
+      flex-direction: column;
+      width: 100%;
+   }
+     
+   .chart-wrapper {
+      border: 1px solid blue;
+      height: 300px;
+      width:  100%;
+      margin: 20px 0;
+      padding: 5px;
+      align-items: center;
+      background-color: white;
+    }
+ }
+ @media (max-width: 858px) {
+ 
+    .GlobalSection{
+    width: 90%;left: 10%;}
+}

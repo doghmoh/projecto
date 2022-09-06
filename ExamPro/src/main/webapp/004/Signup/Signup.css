@@ -1,0 +1,157 @@
+@charset "ISO-8859-1";
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none !important;
+    list-style: none !important;
+    box-sizing: border-box ;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.SignupBox{
+    width: 80%;
+    margin : 20px auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.SignupBox header , .btn-nodetype{
+    position: relative;
+    z-index: 2;
+    height: fit-content;
+    padding: 0 10px;
+    background: #fff;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.SignupBox header .title{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.subBox{
+	    background: dodgerblue;
+}
+section{
+    padding: 25px 30px 20px 30px; height: 580px;
+ 
+}
+.divRight{
+	width:30% ; height: 100%;
+    background: dodgerblue;
+    
+
+}
+.divLeft{
+width:70%;background:white;height: 100%;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border-radius:5px;
+}
+.form-control ,.form-select{
+    display: block;
+    width: 100%;
+    padding: 0.2rem 0.80rem;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0; 
+}
+
+.form-control:focus, .form-select:focus{
+	
+	 box-shadow: inset 0 -1px 0 #ddd;
+}
+
+#LoginForm1,#LoginForm2,#LoginForm3{
+    opacity: 0;
+}
+input {
+    margin-top: 13px;
+}
+.select{
+    margin-top: 13px;
+}
+
+button{
+    margin: 20px;
+}
+
+
+
+ .btn-nodetype button:hover{
+     background-color: blueviolet;
+     border-bottom: 4px solid white;
+     font-weight: bolder;
+ }
+ .pix{
+     position: relative;
+ }
+div.checkeye {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    
+}
+@media (max-width: 952px) {
+  
+    .btn-nodetype {
+        width: 90%;
+        margin: 0; padding: 0;
+    }
+
+}
+@media (max-width: 858px) {
+   .SignupBox{
+    width: 100%;
+    margin : 20px auto;
+   }
+   .divRight{
+	display: none; 
+   }
+   .divLeft{
+	width:100%;
+    }
+    .btn-nodetype {
+        margin: 0;
+        width:100%;
+    }
+    .form-control ,.form-select{
+    margin-top:0;
+    display: block;
+    width: 100%;
+    padding: 0.1rem 0.5rem;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0; 
+}
+div.form-group, .select {
+    margin-top: 15px;
+}
+ 
+    .LoginForm{
+        width:55%;
+        padding: 0 5 0 5;
+        float: right;
+        margin:0;
+        background:linear-gradient(
+        to right,
+        violet 0%, blueviolet 60%, blue 100%); 
+    }
+}
+    @media (max-width: 575px) {
+  
+    div.form-group, .select {
+    margin-top: 0px;
+}
+}
+    

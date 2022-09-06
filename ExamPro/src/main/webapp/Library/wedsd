@@ -1,0 +1,100 @@
+DocumentBuilderFactory dbFactory =
+         DocumentBuilderFactory.newInstance();
+         DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+         Document doc = (dBuilder).newDocument();
+         
+         // root element
+         Element rootElement = doc.createElement("Sections");
+         doc.appendChild(rootElement);
+	         
+         PreparedStatement ps = con.prepareStatement("select * from section where examid= ?");
+         ps.setString(1,id);
+         ResultSet rs= ps.executeQuery();
+         while(rs.next()){
+
+        	 Element section = doc.createElement("Section");
+	         rootElement.appendChild(section); 
+	         
+	         Element Text = doc.createElement("Text");
+	         Text.appendChild(doc.createTextNode(rs.getString(1)));
+	         
+	         Element Id = doc.createElement("Id");
+	         Id.appendChild(doc.createTextNode(rs.getString(2)));
+	         
+	         Element ExamId = doc.createElement("ExamId");
+	         ExamId.appendChild(doc.createTextNode(rs.getString(3)));
+	         
+	         section.appendChild(Text); section.appendChild(Id); section.appendChild(ExamId); 
+	         
+	         Element questions = doc.createElement("Questions");
+	         section.appendChild(questions); 
+	         
+	         
+	         
+	         PreparedStatement ps2 = con.prepareStatement("select * from question where sectionid =?");
+	         ps2.setString(1, rs.getString(2));
+	         ResultSet rs2= ps2.executeQuery();
+         
+		         while(rs2.next()){ 
+		        	 Element question = doc.createElement("Question");
+		        	 questions.appendChild(question); 
+		        	 
+		        	 Element QuestionId = doc.createElement("Id");
+		        	 QuestionId.appendChild(doc.createTextNode(rs2.getString(1)));
+		        	 
+			         Element QuestionText = doc.createElement("QuestionText");
+			         QuestionText.appendChild(doc.createTextNode(rs2.getString(2)));
+			         
+			         Element QuestionMark = doc.createElement("QuestionMark");
+			         QuestionMark.appendChild(doc.createTextNode(rs2.getString(3)));
+			         
+			         Element QuestionType = doc.createElement("QuestionType");
+			         QuestionType.appendChild(doc.createTextNode(rs2.getString(4)));
+			         
+			         Element QuestionProfId = doc.createElement("QuestionProfId");
+			         QuestionProfId.appendChild(doc.createTextNode(rs2.getString(5)));
+			         
+			         Element QuestionExamId = doc.createElement("QuestionExamId");
+			         QuestionExamId.appendChild(doc.createTextNode(rs2.getString(6)));
+			         
+			         Element QuestionSectionId = doc.createElement("QuestionSectionId");
+			         QuestionSectionId.appendChild(doc.createTextNode(rs2.getString(7)));
+			         
+			         question.appendChild(QuestionId); question.appendChild(QuestionText); question.appendChild(QuestionMark);
+			         question.appendChild(QuestionType); question.appendChild(QuestionProfId); 
+			         question.appendChild(QuestionExamId);question.appendChild(QuestionSectionId);
+			         
+			         Element Options = doc.createElement("Options");
+			         question.appendChild(Options); 
+			         
+			         
+			         PreparedStatement ps3 = con.prepareStatement("select * from options where questionid =?");
+			         ps3.setString(1, rs2.getString(1));
+			         ResultSet rs3= ps3.executeQuery();
+			         
+			         while(rs3.next()) {
+			        	 Element Option = doc.createElement("Option");
+				         Options.appendChild(Option);
+				         
+			        	 Element OptionId = doc.createElement("OptionId");
+			        	 OptionId.appendChild(doc.createTextNode(rs3.getString(1)));
+			        	 
+				         Element OptionText = doc.createElement("OptionText");
+				         OptionText.appendChild(doc.createTextNode(rs3.getString(2)));
+				         
+				         Element OptionMark = doc.createElement("OptionMark");
+				         OptionMark.appendChild(doc.createTextNode(rs3.getString(3)));
+				         
+				         Element OptionType = doc.createElement("OptionType");
+				         OptionType.appendChild(doc.createTextNode(rs3.getString(4)));
+				         
+				         Element OQuestionId = doc.createElement("OQuestionId");
+				         OQuestionId.appendChild(doc.createTextNode(rs3.getString(5)));
+				         
+				         Element IsChecked = doc.createElement("IsChecked");
+				         IsChecked.appendChild(doc.createTextNode(rs3.getString(6))); 
+				         
+				         Option.appendChild(OptionId); Option.appendChild(OptionText); Option.appendChild(OptionMark);
+				         Option.appendChild(OptionType); Option.appendChild(OQuestionId); Option.appendChild(IsChecked);
+			         }
+			         
